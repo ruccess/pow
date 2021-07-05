@@ -24,7 +24,7 @@ $(function(){
 			dots.removeClass('d-none');
 			shine.removeClass('d-none').addClass(shine.data('in'));
 		},50);
-		
+
 	});
 	glow.off().on('animationend webkitAnimationEnd oAnimationEnd mozAnimationEnd',function(){
 		bg_2.removeAttr('style').removeClass('d-none').addClass(bg_2.data('out'));
@@ -43,6 +43,7 @@ $(function(){
 			setTimeout(function(){
 				$(document).trigger('animate:reset');
 			},500);
+			location.href="https://naver.com"
 		},2500);
 	});
 
