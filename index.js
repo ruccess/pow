@@ -10,7 +10,8 @@ $(function(){
 		},500);
 		btn.fadeOut(200);
 	}
-	btn.on('click',start);
+    start();
+    
 	bg_2.off().on('animationend webkitAnimationEnd oAnimationEnd mozAnimationEnd',function(){
 		setTimeout(function(){
 		bg_2.fadeOut('fast').addClass('d-none').removeClass(bg_2.data('in'));
