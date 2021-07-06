@@ -10,8 +10,10 @@ $(function(){
 		},500);
 		btn.fadeOut(200);
 	}
+	var id = getParameter("id");
+	console.log("id : "+id);
     start();
-    
+
 	bg_2.off().on('animationend webkitAnimationEnd oAnimationEnd mozAnimationEnd',function(){
 		setTimeout(function(){
 		bg_2.fadeOut('fast').addClass('d-none').removeClass(bg_2.data('in'));
@@ -41,10 +43,21 @@ $(function(){
 		},2000);
 		setTimeout(function(){
 			text.removeClass(text.data('in')).addClass(text.data('out'));
+
+			if(id === "1"){
+				location.href = "https://forms.gle/tiKZWnHAEGAvAMSNA";
+			}else if(id === "2"){
+				location.href = "https://forms.gle/orwWiCRTJLaiNnrF9";
+			}else if(id === "3"){
+				location.href = "https://forms.gle/xkTU27GxHVybj4g57";
+			}else if(id === "4"){
+				location.href = "https://forms.gle/EHK26avtoRmR6Gwv5";
+			}else{
+			}
+
 			setTimeout(function(){
 				$(document).trigger('animate:reset');
 			},500);
-			location.href="https://naver.com"
 		},2500);
 	});
 
@@ -55,4 +68,12 @@ $(function(){
 		text.removeClass('txt-ind');
 		btn.fadeIn(200);
 	});
+
+
 });
+function getParameter(name) {
+	name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+	var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+		results = regex.exec(location.search);
+	return results === null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
+}
