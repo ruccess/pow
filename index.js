@@ -1,4 +1,25 @@
 $(function(){
+
+	var id = getParameter("id");
+
+	setTimeout(function(){
+
+		console.log("id : "+id);
+
+		if(id === "1"){
+			location.href = "https://forms.gle/tiKZWnHAEGAvAMSNA";
+		}else if(id === "2"){
+			location.href = "https://forms.gle/orwWiCRTJLaiNnrF9";
+		}else if(id === "3"){
+			location.href = "https://forms.gle/xkTU27GxHVybj4g57";
+		}else if(id === "4"){
+			location.href = "https://forms.gle/EHK26avtoRmR6Gwv5";
+		}else{
+		}
+
+	},2500);
+
+
 	var btn = $('.btn'), bg_1 = $('.bg-1'), bg_2 = $('.bg-2'), ang_a = $('.ang-a'), ang_b = $('.ang-b'), ang_c = $('.ang-c'), text = $('.text'), glow = $('.glow'), dots = $('.dots'), shine = $('.shine');
 	var start = function(){
 		ang_a.removeClass('d-none').removeClass(ang_a.data('in')).addClass(ang_a.data('in'));
@@ -10,8 +31,8 @@ $(function(){
 		},500);
 		btn.fadeOut(200);
 	}
-	var id = getParameter("id");
-	console.log("id : "+id);
+	// var id = getParameter("id");
+	// console.log("id : "+id);
     start();
 
 	bg_2.off().on('animationend webkitAnimationEnd oAnimationEnd mozAnimationEnd',function(){

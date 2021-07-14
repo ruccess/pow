@@ -1,20 +1,25 @@
 <html>
 <head>
-    <link rel="stylesheet" href="./index.css" />
     <script type="text/javascript" src="./js/jquery-3.3.1.js"></script>
     <script type="text/javascript" src="./index.js"></script>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+        }
+        .bgimg {
+            border: 0;
+            padding: 0;
+            background-image: url('img.jpeg');
+            min-height: 100%;
+            background-position: center;
+            background-size: cover;
+        }
+    </style>
 </head>
 <body>
-    <div class="congrats">
-        <div class="el ang-a animated d-none" data-in="zoomOut"></div>
-        <div class="el ang-b animated d-none" data-in="zoomOut"></div>
-        <div class="el glow animated d-none" data-in="fadeIn"></div>
-        <div class="el bg bg-1 animated d-none" data-in="fadeIn" data-out="zoomOut"></div>
-        <div class="el dots animated d-none"> <i></i> <i></i> <i></i> <i></i> <i></i> <i></i> <i></i> <i></i> <i></i> <i></i> <i></i> <i></i> <i></i> <i></i> <i></i> <i></i> <i></i> <i></i> <i></i> <i></i> <i></i> <i></i> <i></i> <i></i> <i></i> <i></i> <i></i> <i></i> <i></i> <i></i> <i></i> <i></i> <i></i> <i></i> <i></i> <i></i> <i></i> <i></i> <i></i> <i></i> <i></i> <i></i> <i></i> <i></i> <i></i> <i></i> <i></i> <i></i> <i></i> <i></i></div>
-        <div class="el bg bg-2 animated d-none" data-in="zoomIn" data-out="bounceOut"></div>
-        <div class="el ang-c animated d-none" data-in="zoomOut"></div>
-        <div class="el shine animated d-none" data-in="shineIn" data-out="fadeOut"></div>
-        <div class="el text animated d-none" data-in="zoomOutIn" data-out="zoomOutLeft">CONGRATULATIONS</div>
-    </div>
+
+<div class="bgimg"></div>
 </body>
 </html>
