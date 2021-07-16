@@ -7,13 +7,13 @@ $(function(){
 		console.log("id : "+id);
 
 		if(id === "1"){
-			location.href = "https://forms.gle/tiKZWnHAEGAvAMSNA";
+			location.href = "https://forms.gle/tiKZWnHAEGAvAMSNA?output=embed";
 		}else if(id === "2"){
-			location.href = "https://forms.gle/orwWiCRTJLaiNnrF9";
+			location.href = "https://forms.gle/orwWiCRTJLaiNnrF9?output=embed";
 		}else if(id === "3"){
-			location.href = "https://forms.gle/xkTU27GxHVybj4g57";
+			location.href = "https://forms.gle/xkTU27GxHVybj4g57?output=embed";
 		}else if(id === "4"){
-			location.href = "https://forms.gle/EHK26avtoRmR6Gwv5";
+			location.href = "https://forms.gle/EHK26avtoRmR6Gwv5?output=embed";
 		}else{
 		}
 
